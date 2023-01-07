@@ -1,0 +1,15 @@
+.task {
+  background: var(--gray-500);
+  color: var(--white);
+  width: 46.5rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.task + .task {
+  margin-top: 1rem;
+}

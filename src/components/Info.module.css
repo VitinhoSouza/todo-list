@@ -1,0 +1,56 @@
+.info {
+  width: 46.5rem;
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 14px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdTasks {
+  display: flex;
+}
+
+.createdTasks > span {
+  color: var(--blue);
+}
+
+.createdTasks > div {
+  background: var(--gray-400);
+  color: var(--white);
+  border-radius: 999px;
+
+  padding: 0 0.3rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finishedTasks {
+  display: flex;
+}
+
+.finishedTasks > span {
+  color: var(--purple);
+}
+
+.finishedTasks > div {
+  background: var(--gray-400);
+  color: var(--white);
+  border-radius: 999px;
+
+  padding: 0 0.3rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
