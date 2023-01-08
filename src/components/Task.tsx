@@ -1,25 +1,31 @@
 
+import {Trash} from 'phosphor-react';
 import iconDelete from '../utils/delete.svg';
 
 import styles from './Task.module.css';
 
 interface TaskProps {
+    id:number;
     description: string;
+    isCompleted: boolean;
+    handleChangeIsCompletedTask: (id:number) => void;
+    handleDeleteTask: (id:number) => void;
 }
 
-export function Task({description}:TaskProps){
+export function Task({id, description, isCompleted, handleChangeIsCompletedTask, handleDeleteTask}:TaskProps){
 
     return(
         <div className={styles.task}>
-            <input
-                type="checkbox"
-            />
+            <label className={styles.labelCheckbox}>
+                <input type="checkbox" onChange={()=>handleChangeIsCompletedTask(id)}/>
+                <span className={styles.checkmark}></span>
+            </label>
 
-            <span>{description}</span>
+            <span className={isCompleted ? styles.descriptionChecked: ""}>{description}</span>
 
-            <div>
-                <img src={iconDelete} alt="deletar tarefa" />
-            </div>
+            <button onClick={()=>handleDeleteTask(id)}>
+                <Trash/>
+            </button>
         </div>
     )
 }

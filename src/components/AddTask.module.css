@@ -26,6 +26,9 @@
 
 .addTask > input:focus {
   outline: 1px solid var(--purple-dark);
+}
+
+.inputIsActive:focus {
   padding-left: 11.2rem;
   left: 5rem;
 }
@@ -53,6 +56,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .addTask > button {
+    flex-direction: column;
+  }
 }
 
 .addTask > button:hover {
