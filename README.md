@@ -1,4 +1,4 @@
-# Welcome to **todo-list* 📚
+# Welcome to **todo-list** 📚
 With this app, you can:
 - Add a new task;
 - Mark and unmark a task as completed;
