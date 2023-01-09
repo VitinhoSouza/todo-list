@@ -6,3 +6,9 @@
 .taskList {
   margin-top: 1rem;
 }
+
+@media (max-width: 655px) {
+  .taskList {
+    padding: 0 1rem;
+  }
+}

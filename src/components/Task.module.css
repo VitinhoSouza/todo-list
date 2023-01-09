@@ -1,7 +1,7 @@
 .task {
   background: var(--gray-500);
   color: var(--white);
-  width: 46.5rem;
+  max-width: 46.5rem;
   min-height: 3rem;
   border-radius: 8px;
 
